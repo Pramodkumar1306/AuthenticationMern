@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignore node modules
+node_modules/
+
+# Optional: ignore environment variables and logs
+.env
+*.log
+.DS_Store
