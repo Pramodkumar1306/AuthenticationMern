@@ -12,7 +12,7 @@
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-        const res = await axios.post("http://localhost:4000/api/auth/register", form);
+        const res = await axios.post("https://authentication-mern-peach.vercel.app/api/auth/register", form);
         localStorage.setItem("token", res.data.token);
         navigate("/dashboard");
         } catch (err) {

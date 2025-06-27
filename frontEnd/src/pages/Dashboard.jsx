@@ -9,7 +9,7 @@
         const token = localStorage.getItem("token");
         console.log(token)
         axios
-        .get("http://localhost:4000/api/auth/dashboard", {
+        .get("https://authentication-mern-peach.vercel.app/api/auth/dashboard", {
             headers: { "x-auth-token": token },
         })
         .then((res) => setMessage("Welcome to dashboard!"))
